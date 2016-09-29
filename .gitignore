@@ -1,0 +1,24 @@
+.target/
+
+### Vim ###
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+tags
+
+### Linux ###
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+# Folder config file
+Desktop.ini
