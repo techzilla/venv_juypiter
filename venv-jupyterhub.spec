@@ -92,6 +92,8 @@ if ! getent passwd jupyterhub >/dev/null ; then
     else
       useradd -r -g jupyterhub -m -d /var/lib/jupyterhub -s /sbin/nologin -c "jupyter notebook  server" jupyterhub
     fi
+    chown -R jupyterhub:jupyterhub /var/lib/jupyterhub
+    chmod 0750 /var/lib/jupyterhub
 fi
 exit 0
 
