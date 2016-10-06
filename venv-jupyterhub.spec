@@ -45,6 +45,10 @@ Source1: %{name}.sh
 %{?systemd_requires}
 BuildRequires: systemd
 
+Requires: python34 python34-setuptools
+
+
+
 # Blocks
 %files
 %defattr(-,%{file_permissions_user},%{file_permissions_group},-)
